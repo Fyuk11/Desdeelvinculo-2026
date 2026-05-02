@@ -427,3 +427,41 @@ footer {
   .container { max-width: 1300px; }
   .hero-grid { gap: 4rem; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* ... otros estilos que ya tenés ... */
+
+  .hero {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .hero-pdf-regalo {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Opcional: si el contenedor interno también necesita más aire */
+  .hero-content-wrapper {
+    padding: 0 0.5rem;
+  }
+}
