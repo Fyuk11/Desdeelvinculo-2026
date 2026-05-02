@@ -465,3 +465,9 @@ footer {
     padding: 0 0.5rem;
   }
 }
+  /* Centrar columna de PDF */
+  .hero-pdf-column {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
