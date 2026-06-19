@@ -366,3 +366,162 @@ footer {
   .container { max-width: 1300px; }
   .hero-grid { gap: 4rem; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS PÁGINA DE PRODUCTOS */
+
+/* ========== PÁGINA DE PRODUCTOS (catálogo) ========== */
+.pagina-productos {
+  padding: clamp(100px, 15vh, 140px) 0 4rem;
+  background: #ffffff;
+}
+
+.titulo-pagina {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #5a3e2b;
+  font-family: 'Playfair Display', serif;
+}
+
+.subtitulo-pagina {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #5d6d7e;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.producto-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #fdf3e7;
+  border-radius: 20px;
+  padding: 2.5rem;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.producto-imagen {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.producto-imagen img {
+  max-width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.producto-contenido {
+  flex: 1 1 350px;
+}
+
+.producto-contenido h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #5a3e2b;
+  margin-bottom: 1rem;
+}
+
+.producto-descripcion {
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.producto-precio {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e67e22;
+  margin: 1.5rem 0 1rem;
+}
+
+.btn-hotmart {
+  display: inline-block;
+  background: linear-gradient(135deg, #e67e22, #f39c12);
+  color: white;
+  padding: 0.9rem 2.2rem;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(230,126,34,0.3);
+  text-decoration: none;
+}
+
+.btn-hotmart:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(230,126,34,0.4);
+}
+
+.producto-garantia {
+  font-size: 0.9rem;
+  color: #27ae60;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.volver-inicio {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-volver {
+  color: #5a3e2b;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.btn-volver:hover {
+  color: #27ae60;
+}
+
+/* Responsive para la página de productos */
+@media (max-width: 768px) {
+  .producto-detalle {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+  .producto-imagen img {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  .producto-contenido {
+    text-align: left;
+  }
+  .producto-contenido h2 {
+    text-align: center;
+  }
+  .producto-precio {
+    text-align: center;
+  }
+  .btn-hotmart {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
